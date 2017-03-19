@@ -1,0 +1,17 @@
+{
+  "name": "webpack-tslib-demo",
+  "version": "1.0.0",
+  "main": "bundle.umd.js",
+  "module": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf index.js a.js b.js *.d.ts *.js.map bundle.umd.js",
+    "build": "npm run clean && tsc && webpack"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "tslib": "^1.6.0",
+    "typescript": "^2.2.1",
+    "webpack": "^2.2.1"
+  }
+}
